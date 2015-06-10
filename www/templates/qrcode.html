@@ -1,0 +1,20 @@
+<ion-view view-title="QR Code">
+  <ion-content>
+     <div class="list card">
+        <div class="item item-text-wrap">
+          <button class="button button-bar" ng-click="doScan()">QR Scan</button><br>
+          <p>QR Text: {{scanResultValue0}}</p>
+          <p>Type: {{scanResultValue1}}</p>
+        </div>
+     </div>
+     <div class="list card">
+  		  <div class="item item-text-wrap">
+          <button class="button button-bar" ng-click="showGenerate()">Generate QR</button><br>  
+          <p>{{qrTextDisplay}}</p>
+          <div id="qrdiv">
+            <canvas id="qrcanv"}>
+          </div>
+  		  </div>
+	   </div>
+  </ion-content>
+</ion-view>

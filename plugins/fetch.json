@@ -1,0 +1,8 @@
+{
+    "com.google.playservices": {
+        "source": {
+            "type": "registry",
+            "id": "com.google.playservices@19.0.0"
+        }
+    }
+}
