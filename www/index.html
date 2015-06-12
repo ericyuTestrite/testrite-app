@@ -40,6 +40,7 @@
           console.log('GA:startTrackerWithId');
           window.analytics.startTrackerWithId('UA-61789172-1');
         }
+        window.open = cordova.InAppBrowser.open;
     }
     </script>
   </head>

@@ -141,4 +141,15 @@ angular.module('starter.controllers', [])
     }
 })
 
+.controller('TradingMainCtrl', function($scope) {
+    if(window.analytics){
+      console.log('GA:trackview TradingMain');
+      window.analytics.trackView('TradingMain');
+    }
+
+    $scope.gotoService = function(){
+      window.open('http://service.testritegroup.com','_system');
+    }
+})
+
 ;

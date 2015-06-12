@@ -71,6 +71,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('app.trading', {
+    url: "/trading",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/trading/trading-main.html",
+        controller: 'TradingMainCtrl'
+      }
+    }
+  })
+
   .state('app.groupInfo-overview', {
     url: "/groupInfo/overview",
     views: {
@@ -79,7 +89,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'OverviewCtrl'
       }
     }
-  });
+  })
+
+  ;
   // if none of the above states are matched, use this as the fallback
+  console.log("There is no matched url");
   $urlRouterProvider.otherwise('/app/groupInfo');
 });
